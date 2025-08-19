@@ -24,3 +24,188 @@
   .nav .wrap{
     max-width:1100px; margin:auto; display:flex; align-items:center; justify-content:space-between;
     padding:.8rem 1rem;
+  }
+  .nav a{color:#fff; text-decoration:none; margin-left:1rem; opacity:.9}
+  .nav a:hover{opacity:1}
+  /* Hero */
+  .hero{
+    background:linear-gradient(135deg,#1e3a8a,#0ea5e9);
+    color:#fff; text-align:center; padding:72px 16px;
+  }
+  .hero h1{margin:0 0 .4rem 0; font-size:2.2rem}
+  .hero p{margin:.25rem 0 .75rem 0; opacity:.95}
+  .buttons a{
+    display:inline-block; background:#fff; color:#0f172a; padding:.55rem .95rem; border-radius:.6rem;
+    text-decoration:none; font-weight:600; margin:.25rem .4rem;
+  }
+  .buttons a.alt{background:transparent; color:#fff; border:1px solid rgba(255,255,255,.6)}
+  .buttons a:hover{transform:translateY(-1px)}
+  /* Sections */
+  .section{max-width:1000px; margin:28px auto; padding:0 16px}
+  .section h2{
+    margin:0 0 12px 0; font-size:1.5rem; color:#0f172a;
+    border-left:4px solid var(--brand); padding-left:.5rem;
+  }
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:18px; margin:14px 0; box-shadow:0 6px 16px rgba(15,23,42,.06);
+  }
+  .row{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+  @media (max-width:800px){ .row{grid-template-columns:1fr} }
+  .muted{color:var(--muted); font-size:.95rem}
+  .tag{display:inline-block; background:#eef2ff; color:#3730a3; padding:.2rem .55rem; border-radius:999px; font-size:.8rem; margin:.15rem .25rem .15rem 0}
+  .links a{color:var(--brand); text-decoration:none; font-weight:600; margin-right:.8rem}
+  .links a:hover{color:var(--brand-dark)}
+  footer{
+    text-align:center; padding:20px; color:#94a3b8; border-top:1px solid var(--line); margin-top:28px; background:#fff;
+  }
+</style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <div class="nav">
+    <div class="wrap">
+      <div>Michael F. Ramos H.</div>
+      <div>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#educacion">Formación</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero" id="inicio">
+    <h1>Michael Fabián Ramos Hernández</h1>
+    <p>Ciencia de datos, modelado y aplicaciones web en Python</p>
+    <div class="buttons">
+      <a href="https://github.com/mike80s" target="_blank" rel="noopener">GitHub</a>
+      <a class="alt" href="https://www.linkedin.com/in/michaelramoshernandez/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- SOBRE MI -->
+  <section class="section" id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <div class="card">
+      Matemático con experiencia en modelado, análisis de datos y desarrollo de aplicaciones con Python.
+      Trabajo con Pandas, scikit-learn y SQL para construir modelos y con frameworks como Dash y Django para llevarlos a producción.
+      Me interesa aplicar machine learning para educación, ciudades y datos públicos.
+      <div style="margin-top:.6rem">
+        <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">scikit-learn</span>
+        <span class="tag">SQL</span><span class="tag">Dash</span><span class="tag">Django</span><span class="tag">Visualización</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA (según tu LinkedIn) -->
+  <section class="section" id="experiencia">
+    <h2>Experiencia</h2>
+    <div class="row">
+      <div class="card">
+        <div><strong>Research Assistant Professor</strong> — Escuela Colombiana de Ingeniería Julio Garavito</div>
+        <div class="muted">ene 2016 – presente · medio tiempo</div>
+        <div style="margin-top:.4rem">
+          Cálculo, simulación y métodos numéricos; modelado de problemas con Matlab, Wolfram, Python y GeoGebra.
+        </div>
+      </div>
+      <div class="card">
+        <div><strong>Content Designer</strong> — UNIMINUTO Colombia</div>
+        <div class="muted">nov 2022 – feb 2023 · remoto</div>
+        <div style="margin-top:.4rem">
+          Diseño de entorno virtual para aprendizaje de ciencias y matemáticas usando Minecraft Education.
+        </div>
+      </div>
+      <div class="card">
+        <div><strong>Data Scientist</strong> — Monkum S.A.S. (independiente)</div>
+        <div class="muted">ene 2019 – ago 2022 · Bogotá</div>
+        <div style="margin-top:.4rem">
+          Proyectos con Python, DASH, visualización de datos (Plotly) y SQL.
+        </div>
+      </div>
+      <div class="card">
+        <div><strong>Data Science Specialist (apprenticeship)</strong> — Correlation One</div>
+        <div class="muted">mar 2022 – jul 2022</div>
+        <div style="margin-top:.4rem">
+          Análisis de datos públicos y modelado de criminalidad en Bucaramanga (2010–2021) con Python y SQL.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCACIÓN -->
+  <section class="section" id="educacion">
+    <h2>Formación</h2>
+    <div class="row">
+      <div class="card">
+        <div><strong>Maestría en Matemáticas</strong> — Universidad Nacional de Colombia</div>
+        <div class="muted">2012 – 2014</div>
+      </div>
+      <div class="card">
+        <div><strong>Matemático (énfasis en EDP)</strong> — Universidad Nacional de Colombia</div>
+        <div class="muted">2011</div>
+      </div>
+      <div class="card">
+        <div><strong>Licenciatura en Matemáticas</strong> — Universidad Distrital F. J. de Caldas</div>
+        <div class="muted">2008</div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <div class="muted">Certificaciones</div>
+      <ul style="margin:8px 0 0 18px">
+        <li>Machine Learning Specialization — Stanford University (2023)</li>
+        <li>Unsupervised Learning, Recommenders & Reinforcement Learning — Stanford (2023)</li>
+        <li>Advanced Learning Algorithms — Stanford (2023)</li>
+        <li>Google Cloud Essentials — Google (2023)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="section" id="proyectos">
+    <h2>Proyectos</h2>
+
+    <div class="card">
+      <div style="font-weight:700">Estimador Saber 11</div>
+      <div class="muted">Django · Python · scikit-learn · Render</div>
+      <p style="margin:.5rem 0 0 0">
+        Aplicación que predice el puntaje global de la prueba Saber 11 a partir de 15 variables y muestra el resultado al instante.
+      </p>
+      <div class="links" style="margin-top:.4rem">
+        <a href="https://pronostic13.onrender.com/" target="_blank" rel="noopener">Ver aplicación</a>
+        <a href="https://github.com/mike80s" target="_blank" rel="noopener">Código (GitHub)</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="font-weight:700">Estimador de valor de vivienda</div>
+      <div class="muted">Django · Python · Random Forest · Mapa</div>
+      <p style="margin:.5rem 0 0 0">
+        Plataforma que estima el valor de una vivienda y visualiza su ubicación en mapa. En desarrollo continuo.
+      </p>
+      <div class="links" style="margin-top:.4rem">
+        <a href="https://web-production-50e8e.up.railway.app/" target="_blank" rel="noopener">Ver aplicación</a>
+        <a href="https://github.com/mike80s" target="_blank" rel="noopener">Código (GitHub)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <div class="card">
+      <div class="links">
+        <a href="mailto:mframosh@unal.edu.co">mframosh@unal.edu.co</a>
+        <a href="https://github.com/mike80s" target="_blank" rel="noopener">github.com/mike80s</a>
+        <a href="https://www.linkedin.com/in/michaelramoshernandez/" target="_blank" rel="noopener">linkedin.com/in/michaelramoshernandez</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2025 Michael Fabián Ramos Hernández</footer>
+</body>
+</html>
