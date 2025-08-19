@@ -2,144 +2,157 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio - Michael Ramos Hernández</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Fabián Ramos Hernández - Data Scientist Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f7fa;
+      background-color: #f4f4f9;
       color: #333;
     }
     header {
-      background-color: #1f2937;
-      color: #fff;
-      padding: 2rem;
+      background-color: #2c3e50;
+      color: white;
       text-align: center;
+      padding: 2rem 1rem;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
     header p {
-      margin: 0.5rem 0 0;
       font-size: 1.2rem;
+      margin: 0.5rem 0 0;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
     }
     section {
-      padding: 2rem;
       max-width: 900px;
-      margin: auto;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     h2 {
-      color: #1f2937;
-      border-bottom: 2px solid #e5e7eb;
+      color: #2c3e50;
+      border-bottom: 2px solid #2c3e50;
       padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
     ul {
-      list-style: none;
+      list-style-type: none;
       padding: 0;
     }
     ul li {
-      background: #fff;
-      margin: 1rem 0;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
+      margin-bottom: 1rem;
     }
     footer {
-      background: #1f2937;
-      color: #fff;
       text-align: center;
+      background: #2c3e50;
+      color: white;
       padding: 1rem;
       margin-top: 2rem;
+    }
+    a.button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin: 0.5rem 0;
+      background: #2980b9;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    a.button:hover {
+      background: #1f6391;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Michael Ramos Hernández</h1>
-    <p>Data Scientist | Python Developer | Machine Learning Enthusiast</p>
+    <h1>Michael Fabián Ramos Hernández</h1>
+    <p>Data Scientist | Educator | Researcher</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
     <p>
-      I am a Data Scientist passionate about building predictive models and deploying web applications.
-      My expertise includes Python, Data Analysis, Django, and Machine Learning. I focus on turning data into
-      actionable insights and developing solutions that integrate data science with modern web technologies.
+      I am a data scientist and university lecturer with expertise in statistics, predictive modeling, and web applications for data-driven solutions. 
+      I enjoy combining my academic experience with applied research and real-world projects that leverage technology and data for impact.
     </p>
   </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Saber 11 Score Predictor</strong><br>
-        A web application that predicts students’ national exam scores based on 15 input features.<br>
-        <a href="https://pronostic13.onrender.com/" target="_blank">View Project</a>
-      </li>
-      <li>
-        <strong>Housing Price Estimator</strong><br>
-        A tool to estimate property value and display location on a map.<br>
-        <a href="https://web-production-50e8e.up.railway.app/" target="_blank">View Project</a>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Python, Pandas, NumPy, Matplotlib</li>
-      <li>Django, REST APIs, Web Development</li>
-      <li>Machine Learning (Scikit-learn, Random Forest, Regression)</li>
-      <li>Google Cloud Platform (App Engine, Cloud SQL, Docker)</li>
-      <li>SQL and Relational Databases</li>
-    </ul>
-  </section>
-
-  <section>
+  <section id="education">
     <h2>Education</h2>
     <ul>
-      <li>Master’s Degree in Education – Universidad Santo Tomás</li>
-      <li>Bachelor in Mathematics – Universidad Nacional de Colombia</li>
-      <li>Additional coursework in Data Science, Machine Learning, and Web Development</li>
+      <li>
+        <strong>Master’s in Statistics</strong><br>
+        Universidad Nacional de Colombia
+      </li>
+      <li>
+        <strong>Bachelor in Mathematics</strong><br>
+        Universidad Nacional de Colombia
+      </li>
     </ul>
   </section>
 
-  <section>
+  <section id="experience">
     <h2>Professional Experience</h2>
     <ul>
       <li>
-        <strong>High School Mathematics Teacher</strong><br>
-        Bogotá District Education – 10+ years of experience teaching mathematics, preparing students for national exams, and integrating technology into the classroom.
+        <strong>Universidad Escuela Colombiana de Ingeniería</strong><br>
+        Lecturer (2016 – Present) – Teaching undergraduate courses in mathematics and applied statistics, integrating technology and modern learning strategies.
       </li>
       <li>
-        <strong>Data Science Projects</strong><br>
-        Independent developer of predictive analytics and web applications, including education-related predictive models and real estate valuation tools.
+        <strong>Monkum</strong><br>
+        Data Scientist – Worked on data analysis, predictive modeling, and technology solutions to support business decision-making.
       </li>
     </ul>
   </section>
 
-  <section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Saber 11 Test Score Predictor</strong><br>
+        A web application that predicts high school standardized test scores using data analysis and machine learning models.<br>
+        <a href="https://pronostic13.onrender.com/" target="_blank" class="button">View Project</a>
+      </li>
+      <li>
+        <strong>Housing Price Estimator with Map</strong><br>
+        A web app to estimate property values and display geolocated results on a map.<br>
+        <a href="https://web-production-50e8e.up.railway.app/" target="_blank" class="button">View Project</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
     <h2>Contact</h2>
     <p>
-      Connect with me on 
-      <a href="https://www.linkedin.com/in/michaelramoshernandez/" target="_blank">LinkedIn</a>.
+      Connect with me on <a href="https://www.linkedin.com/in/michaelramoshernandez/" target="_blank">LinkedIn</a>.
     </p>
   </section>
 
   <footer>
-    <p>© 2025 Michael Ramos Hernández</p>
+    <p>&copy; 2025 Michael Fabián Ramos Hernández | Data Scientist Portfolio</p>
   </footer>
 </body>
 </html>
-
